@@ -45,5 +45,8 @@ namespace Bookstore.Models
         [Required]
         public double BookPrice { get; set; } //***Data type?
 
+        //Number of pages in book
+        public int BookPages { get; set; }
+
     }
 }

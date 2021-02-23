@@ -33,7 +33,8 @@ namespace Bookstore.Models
                         BookPublisher = "Signet",
                         BookISBN = "978-0451419439",
                         BookCategory = "Fiction, Classic",
-                        BookPrice = 9.95D
+                        BookPrice = 9.95D,
+                        BookPages = 1488
                     },
                     new Book
                     {
@@ -44,7 +45,8 @@ namespace Bookstore.Models
                         BookPublisher = "Simon & Schuster",
                         BookISBN = "978-0743270755",
                         BookCategory = "Non-Fiction, Biography",
-                        BookPrice = 14.58D
+                        BookPrice = 14.58D,
+                        BookPages = 944
                     },
                     new Book
                     {
@@ -54,7 +56,8 @@ namespace Bookstore.Models
                         BookPublisher = "Bantam",
                         BookISBN = "978-0553384611",
                         BookCategory = "Non-Fiction, Biography",
-                        BookPrice = 21.54D
+                        BookPrice = 21.54D,
+                        BookPages = 832
                     },
                     new Book
                     {
@@ -65,7 +68,8 @@ namespace Bookstore.Models
                         BookPublisher = "Random House",
                         BookISBN = "978-0812981254",
                         BookCategory = "Non-Fiction, Biography",
-                        BookPrice = 11.61D
+                        BookPrice = 11.61D,
+                        BookPages = 864
                     },
                     new Book
                     {
@@ -75,7 +79,8 @@ namespace Bookstore.Models
                         BookPublisher = "Random House",
                         BookISBN = "978-0812974492",
                         BookCategory = "Non-Fiction, Historical",
-                        BookPrice = 13.33D
+                        BookPrice = 13.33D,
+                        BookPages = 528
                     },
                     new Book
                     {
@@ -85,7 +90,8 @@ namespace Bookstore.Models
                         BookPublisher = "Vintage",
                         BookISBN = "978-0804171281",
                         BookCategory = "Fiction, Historical Fiction",
-                        BookPrice = 15.95D
+                        BookPrice = 15.95D,
+                        BookPages = 288
                     },
                     new Book
                     {
@@ -95,7 +101,8 @@ namespace Bookstore.Models
                         BookPublisher = "Grand Central Publishing",
                         BookISBN = "978-1455586691",
                         BookCategory = "Non-Fiction, Self-Help",
-                        BookPrice = 14.99D
+                        BookPrice = 14.99D,
+                        BookPages = 304
                     },
                     new Book
                     {
@@ -105,7 +112,8 @@ namespace Bookstore.Models
                         BookPublisher = "Grand Central Publishing",
                         BookISBN = "978-1455523023",
                         BookCategory = "Non-Fiction, Self-Help",
-                        BookPrice = 21.66D
+                        BookPrice = 21.66D,
+                        BookPages = 240
                     },
                     new Book
                     {
@@ -115,7 +123,8 @@ namespace Bookstore.Models
                         BookPublisher = "Portfolio",
                         BookISBN = "978-1591847984",
                         BookCategory = "Non-Fiction, Business",
-                        BookPrice = 29.16D
+                        BookPrice = 29.16D,
+                        BookPages = 400
                     },
                     new Book
                     {
@@ -125,7 +134,43 @@ namespace Bookstore.Models
                         BookPublisher = "Bantam",
                         BookISBN = "978-0553393613",
                         BookCategory = "Fiction, Thrillers",
-                        BookPrice = 15.03D
+                        BookPrice = 15.03D,
+                        BookPages = 642
+                    },
+
+                    //My top 3 books
+                    new Book
+                    {
+                        BookTitle = "The Way of Kings",
+                        BookAuthorFirstName = "Brandon",
+                        BookAuthorLastName = "Sanderson",
+                        BookPublisher = "Tor Books",
+                        BookISBN = "978-0765326355",
+                        BookCategory = "High Fantasy",
+                        BookPrice = 9.59D,
+                        BookPages = 1007
+                    },
+                    new Book
+                    {
+                        BookTitle = "The Lightning Thief",
+                        BookAuthorFirstName = "Rick",
+                        BookAuthorLastName = "Riordan",
+                        BookPublisher = "Miramax Books",
+                        BookISBN = "978-0786856297",
+                        BookCategory = "Fantasy, Young Adult, Greek Mythology",
+                        BookPrice = 5.98D,
+                        BookPages = 377
+                    },
+                    new Book
+                    {
+                        BookTitle = "The Hitchhiker's Guide to the Galaxy",
+                        BookAuthorFirstName = "Douglas",
+                        BookAuthorLastName = "Adams",
+                        BookPublisher = "Pan Books",
+                        BookISBN = "978-0330258648",
+                        BookCategory = "Comic Science Fiction",
+                        BookPrice = 7.99D,
+                        BookPages = 224
                     }
 
 

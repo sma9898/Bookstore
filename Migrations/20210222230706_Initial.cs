@@ -19,7 +19,8 @@ namespace Bookstore.Migrations
                     BookPublisher = table.Column<string>(nullable: false),
                     BookISBN = table.Column<string>(nullable: false),
                     BookCategory = table.Column<string>(nullable: false),
-                    BookPrice = table.Column<double>(nullable: false)
+                    BookPrice = table.Column<double>(nullable: false),
+                    BookPages = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

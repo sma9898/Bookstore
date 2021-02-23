@@ -6,6 +6,19 @@
     <title>@ViewData["Title"] - Bookstore</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+
+    <!--For Additional Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--For affix-->
+    <style>
+        /* Note: Try to remove the following lines to see the effect of CSS positioning */
+        .affix {
+            top: 20px;
+        }
+    </style>
 </head>
 <body>
     <!--<header>
@@ -29,11 +42,35 @@
             </div>
         </nav>
     </header>-->
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+    <div class="bg-dark text-white p-2">
+        <span class="navbar-brand ml-2">Bookstore</span>
     </div>
+
+    <div class="row m-1 p1">
+        <div id="blah" class="col-3">
+            <!--Affix the left column-->
+            <div data-spy="affix" data-offset-top="25" class="col-1" >
+                <h1>Here are some Words</h1>
+
+                <!--Add collapsible-->
+                Check out some of these books!
+                <br />
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#moreInfo">More Info</button>
+                <div id="moreInfo" class="collapse">
+                    <h6>Listed books recommended by Spencer Hilton and Sarah Anderson.</h6>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="col-9">
+            @RenderBody()
+        </div>
+    </div>
+
+    
 
     <!--<footer class="border-top footer text-muted">
         <div class="container">

@@ -44,6 +44,9 @@ namespace Bookstore.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("BookPages")
+                        .HasColumnType("int");
+
                     b.Property<double>("BookPrice")
                         .HasColumnType("float");
 
