@@ -4,40 +4,18 @@
 
 @model BookListViewModel
 
-<header>
+<!--<header>
     <h1>Books</h1>
-</header>
+</header>-->
 
 @foreach (var x in Model.Books)
 {
 <!--Display information for all Books stored in the database-->
-<div class="card card-outline-primary m-1 p-1">
-    <div class="bg-faded p-1">
-        <h4>
-            @x.BookTitle
-            <span class="badge badge-pill badge-primary" style="float:right; background-color:lightpink">
-                <small>@x.BookPrice.ToString("c")</small>
-            </span>
-        </h4>
-        <h6>
-            <i>@x.BookAuthorLastName, @x.BookAuthorFirstName @x.BookAuthorMiddleName</i>
-        </h6>
-    </div>
-
-    <div class="card-text p-1">Page Count: @x.BookPages</div>
-    <div class="card-text p-1">Category: @x.BookCategory</div>
-
-    <!--Add well-->
-    <div class="well">
-        <div class="card-text p-1">Publisher: @x.BookPublisher</div>
-        <div class="card-text p-1">ISBN: @x.BookISBN</div>
-    </div>
-
-   
-</div>
+    <!--Use partial view instead of all in index-->
+    <partial name="BookSummary" model="x" />
 }
 
 <!--Add navigation-->
 <div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn"
-     page-class-normal="btn-outline-dark" page-class-selected="btn-primary" 
+     page-class-normal="btn-outline-dark" page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory"
      class="btn-group pull-right m-1"></div>

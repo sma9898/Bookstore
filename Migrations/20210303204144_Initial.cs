@@ -18,6 +18,7 @@ namespace Bookstore.Migrations
                     BookAuthorLastName = table.Column<string>(nullable: false),
                     BookPublisher = table.Column<string>(nullable: false),
                     BookISBN = table.Column<string>(nullable: false),
+                    BookClassification = table.Column<string>(nullable: true),
                     BookCategory = table.Column<string>(nullable: false),
                     BookPrice = table.Column<double>(nullable: false),
                     BookPages = table.Column<int>(nullable: false)

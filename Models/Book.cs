@@ -37,6 +37,9 @@ namespace Bookstore.Models
         [RegularExpression("^[0-9]{3}-[0-9]{10}")]
         public string BookISBN { get; set; }
 
+        //Classification: fiction or nonfiction
+        public string BookClassification { get; set; }
+
         //Book category, required
         [Required]
         public string BookCategory { get; set; }

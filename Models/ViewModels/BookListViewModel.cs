@@ -9,5 +9,8 @@ namespace Bookstore.Models.ViewModels
     {
         public IEnumerable<Book> Books { get; set; }
         public PagingInfo PagingInfo { get; set; } //For navigation
+
+        //Category information variable
+        public string CurrentCategory { get; set; }
     }
 }

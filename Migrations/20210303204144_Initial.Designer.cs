@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bookstore.Migrations
 {
     [DbContext(typeof(BookstoreDbContext))]
-    [Migration("20210222230706_Initial")]
+    [Migration("20210303204144_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,6 +40,9 @@ namespace Bookstore.Migrations
 
                     b.Property<string>("BookCategory")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BookClassification")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("BookISBN")

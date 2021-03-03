@@ -32,7 +32,8 @@ namespace Bookstore.Models
                         BookAuthorLastName = "Hugo",
                         BookPublisher = "Signet",
                         BookISBN = "978-0451419439",
-                        BookCategory = "Fiction, Classic",
+                        BookClassification = "Fiction",
+                        BookCategory = "Classic",
                         BookPrice = 9.95D,
                         BookPages = 1488
                     },
@@ -44,7 +45,8 @@ namespace Bookstore.Models
                         BookAuthorLastName = "Goodwin",
                         BookPublisher = "Simon & Schuster",
                         BookISBN = "978-0743270755",
-                        BookCategory = "Non-Fiction, Biography",
+                        BookClassification = "Non-Fiction",
+                        BookCategory = "Biography",
                         BookPrice = 14.58D,
                         BookPages = 944
                     },
@@ -55,7 +57,8 @@ namespace Bookstore.Models
                         BookAuthorLastName = "Schroeder",
                         BookPublisher = "Bantam",
                         BookISBN = "978-0553384611",
-                        BookCategory = "Non-Fiction, Biography",
+                        BookClassification = "Non-Fiction",
+                        BookCategory = "Biography",
                         BookPrice = 21.54D,
                         BookPages = 832
                     },
@@ -67,7 +70,8 @@ namespace Bookstore.Models
                         BookAuthorLastName = "White",
                         BookPublisher = "Random House",
                         BookISBN = "978-0812981254",
-                        BookCategory = "Non-Fiction, Biography",
+                        BookClassification = "Non-Fiction",
+                        BookCategory = "Biography",
                         BookPrice = 11.61D,
                         BookPages = 864
                     },
@@ -78,7 +82,8 @@ namespace Bookstore.Models
                         BookAuthorLastName = "Hilllenbrand",
                         BookPublisher = "Random House",
                         BookISBN = "978-0812974492",
-                        BookCategory = "Non-Fiction, Historical",
+                        BookClassification = "Non-Fiction",
+                        BookCategory = "Historical",
                         BookPrice = 13.33D,
                         BookPages = 528
                     },
@@ -89,7 +94,8 @@ namespace Bookstore.Models
                         BookAuthorLastName = "Crichton",
                         BookPublisher = "Vintage",
                         BookISBN = "978-0804171281",
-                        BookCategory = "Fiction, Historical Fiction",
+                        BookClassification = "Fiction",
+                        BookCategory = "Historical Fiction",
                         BookPrice = 15.95D,
                         BookPages = 288
                     },
@@ -100,7 +106,8 @@ namespace Bookstore.Models
                         BookAuthorLastName = "Newport",
                         BookPublisher = "Grand Central Publishing",
                         BookISBN = "978-1455586691",
-                        BookCategory = "Non-Fiction, Self-Help",
+                        BookClassification = "Non-Fiction",
+                        BookCategory = "Self-Help",
                         BookPrice = 14.99D,
                         BookPages = 304
                     },
@@ -111,7 +118,8 @@ namespace Bookstore.Models
                         BookAuthorLastName = "Abrashoff",
                         BookPublisher = "Grand Central Publishing",
                         BookISBN = "978-1455523023",
-                        BookCategory = "Non-Fiction, Self-Help",
+                        BookClassification = "Non-Fiction",
+                        BookCategory = "Self-Help",
                         BookPrice = 21.66D,
                         BookPages = 240
                     },
@@ -122,7 +130,8 @@ namespace Bookstore.Models
                         BookAuthorLastName = "Branson",
                         BookPublisher = "Portfolio",
                         BookISBN = "978-1591847984",
-                        BookCategory = "Non-Fiction, Business",
+                        BookClassification = "Non-Fiction",
+                        BookCategory = "Business",
                         BookPrice = 29.16D,
                         BookPages = 400
                     },
@@ -133,7 +142,8 @@ namespace Bookstore.Models
                         BookAuthorLastName = "Grisham",
                         BookPublisher = "Bantam",
                         BookISBN = "978-0553393613",
-                        BookCategory = "Fiction, Thrillers",
+                        BookClassification = "Fiction",
+                        BookCategory = "Thrillers",
                         BookPrice = 15.03D,
                         BookPages = 642
                     },
@@ -146,6 +156,7 @@ namespace Bookstore.Models
                         BookAuthorLastName = "Sanderson",
                         BookPublisher = "Tor Books",
                         BookISBN = "978-0765326355",
+                        BookClassification = "Fiction",
                         BookCategory = "High Fantasy",
                         BookPrice = 9.59D,
                         BookPages = 1007
@@ -157,7 +168,8 @@ namespace Bookstore.Models
                         BookAuthorLastName = "Riordan",
                         BookPublisher = "Miramax Books",
                         BookISBN = "978-0786856297",
-                        BookCategory = "Fantasy, Young Adult, Greek Mythology",
+                        BookClassification = "Fiction",
+                        BookCategory = "Fantasy",
                         BookPrice = 5.98D,
                         BookPages = 377
                     },
@@ -168,6 +180,7 @@ namespace Bookstore.Models
                         BookAuthorLastName = "Adams",
                         BookPublisher = "Pan Books",
                         BookISBN = "978-0330258648",
+                        BookClassification = "Fiction",
                         BookCategory = "Comic Science Fiction",
                         BookPrice = 7.99D,
                         BookPages = 224
