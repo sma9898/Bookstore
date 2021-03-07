@@ -31,7 +31,7 @@ namespace Bookstore
             //Add this connection thing
             services.AddDbContext<BookstoreDbContext>(options =>
             {
-                options.UseSqlServer(Configuration["ConnectionStrings:BookstoreConnection"]);
+                options.UseSqlite(Configuration["ConnectionStrings:BookstoreConnection"]);
             });
 
             //Add Scope something
@@ -86,7 +86,7 @@ namespace Bookstore
                 endpoints.MapDefaultControllerRoute();
             });
 
-            SeedData.EnsurePopulated(app); //Comment out?
+            SeedData.EnsurePopulated(app); 
         }
     }
 }
