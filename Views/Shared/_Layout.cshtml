@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 
+    <!--From Textbook Ch. 9-->
+    <link href="/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+
+
     <!--For Additional Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -43,14 +47,23 @@
         </nav>
     </header>-->
 
+
+    <!--From Textbook Ch. 9-->
     <div class="bg-dark text-white p-2">
-        <span class="navbar-brand ml-2">Bookstore</span>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col navbar-brand">Bookstore</div>
+                <div class="col-6 text-right">
+                    <vc:cart-summary />
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="row m-1 p1">
         <div id="blah" class="col-3">
             <!--Affix the left column-->
-            <div data-spy="affix" data-offset-top="25" class="col-1" >
+            <div data-spy="affix" data-offset-top="25" class="col-1">
                 <h1>Yay Books!</h1>
 
                 <!--Add collapsible-->
@@ -66,14 +79,14 @@
             </div>
         </div>
 
-        
+
 
         <div class="col-9">
             @RenderBody()
         </div>
     </div>
 
-    
+
 
     <!--<footer class="border-top footer text-muted">
         <div class="container">

@@ -24,7 +24,7 @@ namespace Bookstore.Controllers
             _repository = repository; //Assign the value
         }
 
-        public IActionResult Index(string category, int page = 1) //Pass in page to go to. Default is page 1
+        public IActionResult Index(string category, int pageNum = 1) //Pass in page to go to. Default is page 1
         {
             //Pass in info
             return View(new BookListViewModel
@@ -32,12 +32,12 @@ namespace Bookstore.Controllers
                 Books = _repository.Books
                 .Where(p => category == null || p.BookCategory == category) //Get right category or all if none selected
                 .OrderBy(p => p.BookId)
-                .Skip((page - 1) * PageSize)
+                .Skip((pageNum - 1) * PageSize)
                 .Take(PageSize)
                 ,
                 PagingInfo = new PagingInfo
                 {
-                    CurrentPage = page,
+                    CurrentPage = pageNum,
                     ItemsPerPage = PageSize,
                     //If no category selected, use total, else use total in selected category
                     TotalNumItems = category == null ? _repository.Books.Count() :
